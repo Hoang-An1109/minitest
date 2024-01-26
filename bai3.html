@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+    <!--B1: Viết 2 ô Input và nút Tính tích. -->
+    <input type="number" id="A" placeholder="Nhập số a: ">
+    <input type="number" id="B" placeholder="Nhập số b: ">
+    <button onclick="tinhTich()">Tính tích</button>
+
+    <h1 id="ketqua"></h1>
+</body>
+<script>
+    //B2: Viết hàm để nhận giá trị từ 2 ô Input và tính tích của chúng.
+    function tinhTich()
+    {
+        //+B1:
+        var a = parseFloat(document.getElementById("A").value)
+        var b = parseFloat(document.getElementById("B").value)
+        var S=a*b
+    //B3: Hiển thị kết quả vào thẻ h1
+        document.getElementById("ketqua").innerHTML="Tích của 2 số bạn vừa nhập là: "+S
+    }
+</script>
+</html>

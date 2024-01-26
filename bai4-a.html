@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4a</title>
+</head>
+<body>
+    <input type="number" id="A" placeholder="Nhập vào cạnh a: ">
+    <button onclick="tinh()">Tính</button>
+    <p id="ketqua1"></p>
+    <p id="ketqua2"></p>
+</body>
+<script>
+    function tinh()
+    {
+        var a = parseFloat(document.getElementById("A").value)
+        var chuvi=a*4
+        var dientich=Math.pow(a,2)
+
+        document.getElementById("ketqua1").innerHTML="Chu vi của hình vuông có độ dài cạnh "+a+" là: "+chuvi
+        document.getElementById("ketqua2").innerHTML="Diện tích của hình vuông có độ dài cạnh "+a+" là: "+dientich
+    }
+</script>
+</html>
